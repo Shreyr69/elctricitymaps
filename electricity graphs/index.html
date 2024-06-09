@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Electricity Maps</title>
+  <meta name="title" content="Electricity Maps">
+  <meta name="description" content="This is a power generation and monitoring website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="ElectricityMAps1.png" width="100" height="50" alt="Electricity home" class="logo-light">
+
+        <img src="ElectricityMAps.png" width="100" height="50" alt="Electricity home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Electricity home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#graph" class="navbar-link">Graphs</a>
+          </li>
+
+          <li>
+            <a href="#chart" class="navbar-link">Charts</a>
+          </li>
+
+          <li>
+            <a href="#tips" class="navbar-link">Tips</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">shreyrai69@gmail.com</a>
+
+          <a href="tel:001234567890" class="contact-link">9628646700</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="map.html" class="btn btn-primary" target="_blank">Map</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Exploring Sustainable Electricity Usage in India</h1>
+
+            <p class="hero-text">
+              We delve into the intricacies of electricity consumption and generation across different states and regions of the country            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">Explore Now</a>
+
+              <a href="#contact" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="exploding-colorful-light-bulb-represents-new-ideas-and-brainstorming-concepts-free-photo.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="powergrid.jpeg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <!--<button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>-->
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="energy-generation-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="main-image-power-gen-page.webp" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100"  id="main-image">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Description</p>
+
+            <h2 class="h2 section-title">
+              Powering Our World: Exploring Sustainable Electricity Usage in India.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Project Objectives</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our project aims to provide a comprehensive understanding of electricity consumption and generation in India. Through detailed analysis and visualization, we seek to highlight regional disparities, identify trends, and promote awareness of sustainable energy practices. 
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Goals</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our ultimate goal is to empower stakeholders with knowledge and insights to make informed decisions and drive positive change in the energy sector.                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Understanding Electricity Consumption and Generation</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Understanding electricity consumption and generation is crucial for several reasons. It helps policymakers formulate effective energy policies, enables researchers to study societal trends and environmental impacts, and empowers individuals to make informed decisions about energy usage. By analyzing consumption patterns and identifying opportunities for optimization, we can work towards a more sustainable and equitable energy future.
+
+
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">How the Website Works</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our website utilizes interactive maps, graphs, and charts to visualize electricity consumption and generation data across different states and regions of India. Users can explore detailed information, compare trends, and gain insights into factors influencing energy usage. With user-friendly navigation and informative content, our website serves as a valuable resource for anyone interested in understanding and promoting sustainable electricity usage in India.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #GRAPHS
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label" id="graph">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="electricity-indicators-in-india-2010-2020 (1).png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+              Electricity Indicators in India, 2010-2020
+            </h2>
+
+            <p class="section-text">
+              Electricity generation capacity represents the total amount of electricity that can be produced within the region, often measured in megawatts (MW) or gigawatts (GW).<br>
+              Demand per capita indicates the average electricity consumption per person in the region.<br>
+              Grid length refers to the total length of electricity transmission and distribution lines within the region's power grid<br>
+              Access to electricity measures the percentage of the population with access to reliable electricity services.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Electricity Generation in India
+          </h2>
+
+          <a href="https://ourworldindata.org/energy/country/india" target="_blank" class="btn btn-primary">More Info</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+      
+      <!-- 
+        - #GRAPH2
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="electricity-generation.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+              Electricity Generation in India across the years
+            </h2>
+
+            <p class="section-text">
+              The graph illustrates electricity generation trends in India over the years, showcasing the total amount of electricity produced annually. It provides a visual representation of the country's evolving energy landscape and highlights patterns of growth, fluctuations, and milestones in electricity generation.
+            </p>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+      
+
+      <!-- 
+        - #GRAPH3
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="per-capita-electricity-generation.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+              Per capita Electricity Generation in India
+            </h2>
+
+            <p class="section-text">
+              The graph depicts per capita electricity generation in India over a specific period, illustrating the amount of electricity generated per person on average. This metric offers insights into the level of electricity consumption and energy usage patterns across different regions and population segments in India.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #GRAPH4
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="Screenshot 2024-04-11 034534.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+             All India Gross Electricity Generation Utilities
+            </h2>
+
+            <p class="section-text">
+              
+The graph provides an overview of All India Gross Electricity Generation Utilities, showcasing the total electricity generated by various utility providers across the country. It offers a comprehensive snapshot of India's electricity production landscape, encompassing power generated from thermal, hydro, nuclear, and renewable energy sources.
+            </p>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Electricity Consumption in India
+          </h2>
+
+          <a href="https://ourworldindata.org/energy/country/india" target="_blank" class="btn btn-primary">More Info</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+      
+      <!-- 
+        - #GRAPH5
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="primary-energy-cons.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+              Electricity Consumption in India across the years
+            </h2>
+
+            <p class="section-text">
+              The graph presents the trend of electricity consumption in India over a specified timeframe, showcasing the total electricity consumed across the nation. This metric provides valuable insights into the evolving energy demand landscape, reflecting changes in economic activity, population growth, industrialization, and lifestyle patterns.
+            </p>
+<
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      
+      <!-- 
+        - #GRAPH6
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="Screenshot 2024-04-11 034320.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+             Growth of Per Capita Electricity Consmption in India
+            </h2>
+
+            <p class="section-text">
+              The graph illustrates the growth of per capita electricity consumption in India over a specified period, depicting the average amount of electricity consumed per person. This metric offers valuable insights into changes in energy consumption patterns, lifestyle trends, and economic development within the country.
+            </p>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+            
+      <!-- 
+        - #GRAPH7
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="Screenshot 2024-04-11 034534.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Graphs</p>
+
+            <h2 class="h2 section-title">
+              Growth of Category-wise Electricity Consumption utilities
+            </h2>
+
+            <p class="section-text">
+              The graph visualizes the growth of category-wise electricity consumption utilities in India over a specified period, highlighting the consumption trends across various sectors such as residential, commercial, industrial, and agricultural. This breakdown offers valuable insights into the distribution of electricity usage among different segments of the economy.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">1844TWh</span>
+
+                <spna class="span">Electricity Generated</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">1800TWh</span>
+
+                <spna class="span">Electricity Consumed</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">3120KWh</span>
+
+                <spna class="span">Average Consumption</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">179GWh</span>
+
+                <spna class="span">Renewable Electricity</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CHART
+      -->
+
+      <section class="section project" aria-labelledby="project-label" id="chart">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">Charts</p>
+
+          <h2 class="h2 section-title">
+            Check out some of our awesome pie charts showing electricity generation and consumption by different sectors and sources.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 660; --height: 600;">
+                  <img src="ElectricityGeneration.png" width="660" height="600" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">All India Gross Electricity Generation</a>
+                  </h3>
+
+                  <!--<p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>--->
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">2020-2021</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Pie-chart</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 660; --height: 600;">
+                  <img src="ElectricityConsumption.png" width="660" height="600" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Electricity Consumption Patterns</a>
+                  </h3>
+
+                  <!--<p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>-->
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">2020-2021</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Pie-chart</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 660; --height: 600;">
+                  <img src="InstalledCapacity.png" width="660" height="600" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Installed Capacity Modewise Utilities</a>
+                  </h3>
+
+                  <!--<p class="card-text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras
+                    imperdiet nun eu dolor.
+                  </p>-->
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">2020-2021</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Pie-chart</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+  
+  
+      <!-- 
+        - #TIPS
+      -->
+
+      <section class="section service" aria-labelledby="service-label" id="tips">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Tips</p>
+
+          <h2 class="h2 section-title">
+            Information about energy-saving appliances, practices, and technologies.
+
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Optimize Lighting Usage</h3>
+
+                <p class="card-text">
+                  Switch to energy-efficient LED bulbs, turn off lights when not in use, and make use of natural light during the day by opening curtains or blinds. Additionally, consider installing motion sensor lights in areas with less frequent usage to minimize energy wastage.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Unplug Electronics</h3>
+
+                <p class="card-text">
+                  Many electronics continue to draw power even when turned off or in standby mode. Make it a habit to unplug chargers, appliances, and electronics when not in use, or use power strips with an on/off switch to easily cut off power to multiple devices at once.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Energy-Efficient Appliances</h3>
+
+                <p class="card-text">
+                  When purchasing new appliances, look for energy-efficient models with high Energy Star ratings. These appliances are designed to consume less energy while performing the same tasks, resulting in long-term cost savings and reduced energy consumption.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Renewable Energy</h3>
+
+                <p class="card-text">
+                  Consider installing rooftop solar panels or investing in community solar programs to generate clean, renewable energy for your home or business. Explore other renewable energy options such as wind turbines, hydroelectric systems, and geothermal heat pumps to further reduce reliance on fossil fuels and mitigate environmental impact.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="ElectricityMAps1.png" width="150" height="70" >
+        </a>
+
+        <p class="footer-text">
+          &copy; Shrey Udit and Ansh <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <!--<li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>-->
+
+          <li>
+            <a href="https://twitter.com/ShreyRai369340" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Shreyr69/" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/shreyr.07/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="www.linkedin.com/in/shrey18" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Lovely Professional University,Phagwara , Punjab
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">shreyrai69@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">96 28 64 67 00</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Graphs</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Charts</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Terms of Use</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Contact Us</p>
+
+        <p class="footer-text">
+          Contact Us for any information and updates.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

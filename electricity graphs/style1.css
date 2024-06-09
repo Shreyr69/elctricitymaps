@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: rgb(6, 66, 115);
+  background: radial-gradient(
+    circle,
+    rgba(6, 66, 115, 1) 0%,
+    rgba(29, 162, 216, 1) 55%,
+    rgba(222, 243, 246, 1) 100%
+  );
+}
+
+svg {
+  position: fixed;
+  overflow: hidden;
+  width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 90%;
+  z-index: 1;
+}
+
+#name {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  opacity: 0;
+  border-radius: 5px;
+  border: 1px solid pink;
+  padding: 0.2em;
+  font-size: 0.8rem;
+  z-index: 2;
+  pointer-events: none;
+  height: 100px;
+}
+
+#data {
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid pink;
+  padding: 0.2em;
+  font-size: 0.5rem;
+  display: inline-block;
+}
+
+svg path {
+  cursor: pointer;
+}
+
+.highlight {
+  fill: rgb(241, 134, 134);
+}
+
+#stateList {
+  font-size: 0.2rem;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+#stateSearch {
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  border: 1px solid pink;
+  padding: 0.2em;
+  font-size: 0.5rem;
+}
+
+#parent {
+  white-space: nowrap;
+}
+
+.searchbox {
+  display: inline-block;
+}
